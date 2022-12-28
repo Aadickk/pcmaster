@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link type="text/css" href="{{ url_for('static', filename='css/css.css')}}" rel="stylesheet" />
+</head>
+<body>
+    <table>
+        <a href="/" class = "gradient-button1">Home</a>
+        <a href="/builder/start/start" class = "gradient-button1">Builder</a>
+        {% for row in datas %}
+
+        <tr><th><a href="/builder/partpicker/{{ name }}/partinfo/{{ row }}" class = "pulse">{{ row }}</a></th></tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

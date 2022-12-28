@@ -1,0 +1,32 @@
+body{
+	background-image:url('https://media0.giphy.com/media/dalAKBkBak1S8/giphy-downsized-large.gif');
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-size:cover;
+}
+.gradient-button {
+  text-decoration: none;
+  display: inline-block;
+  color: white;
+  padding: 20px 80px;
+  margin: 30px 30px;
+  border-radius: 10px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-image: linear-gradient(to right, #f52525 0%, #4d0b0b 51%,#f52525 100%);
+  background-size: 600% auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+  transition: 1.5s;
+}
+.gradient-button:hover {
+  background-position: right center;
+}
+div{
+    display: flex;
+  justify-content: center;
+  margin-top: 280px;
+  margin-right:700px;
+}
+
+

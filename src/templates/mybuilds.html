@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+     <link type="text/css" href="{{ url_for('static', filename='css/main.css')}}" rel="stylesheet" />
+</head>
+<body>
+  <a href="/" class = "gradient-button1"> Home </a>
+  <p></p>
+  {% for id in ids %}
+  <tr><th><a href="/mybuilds/{{ id }}" class = "gradient-button">build #{{ id }}</a></th></tr>
+  {% endfor %}
+</body>
+</html>
